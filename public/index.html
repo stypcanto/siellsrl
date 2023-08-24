@@ -1,15 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-snap-type-y-mandatory">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <meta name="description" content="Soluciones sostenibles de energía y telecomunicaciones.">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
 </head>
-<body>
-    <h1 class="text-lg bg-slate-500">Inicio</h1>
-    <ul class="text-sm bg-gray-500">Uno</ul>
-    <ul class="text-sm bg-gray-500">Dos</ul>
-    <ul class="text-sm bg-gray-500">Tres</ul>
+
+<body class="text-base text-black transition bg-white font-quicksand duration-400">
+    <div>
+        <div>
+            <nav>
+                <!-- NAV BAR CENTER -->
+                <div class="fixed flex items-center justify-between w-full shadow-lg">
+                    <!-- OPCION LOGO -->
+                    <div class="relative ml-6 md:w-40 md:h-16 lg:w-40 lg:h-16">
+                        <img src="./img/Logo SIELL.png" alt="logo" class="w-full h-full">
+                    </div>
+
+                    <!-- OPCIONES DE NAVEGACION -->
+                    <ul class="flex ml-6 space-x-4 text-sm text-customYellow">
+                        <li><a href="#home" class="hover:underline hover:text-blue-500">Inicio</a></li>
+                        <li><a href="#about" class="hover:underline hover:text-blue-500">Nosotros</a></li>
+                        <li><a href="#products" class="hover:underline hover:text-blue-500">Productos</a></li>
+                        <li><a href="#services" class="hover:underline hover:text-blue-500">Servicios</a></li>
+                        <li><a href="#proyects" class="hover:underline hover:text-blue-500">Proyectos</a></li>
+                        <li><a href="#blog" class="hover:underline hover:text-blue-500">Blog</a></li>
+                        <li><a href="#contact" class="hover:underline hover:text-blue-500">Contacto</a></li>
+
+
+                        <!-- SWITCH -->
+
+                        <li class="relative ">
+                            <input type="checkbox" id="switch" class="hidden">
+                            <label for="switch"
+                                class="relative flex items-center w-10 h-5 bg-gray-400 rounded-full cursor-pointer">
+                                <div
+                                    class="absolute w-5 h-5 transition-transform duration-300 ease-in-out transform translate-x-0 bg-white rounded-full">
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <div>
+
+                    </div>
+                    <div class="mr-8 ">
+                        <ul class="flex text-sm text-white">
+                            <li><a href="#" class="hover:underline hover:text-blue-500">Login</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- NAV BAR LEFT -->
+                <div>
+
+                </div>
+
+                <!-- NAV BAR RIGHT -->
+                <div>
+
+                </div>
+
+                <!-- NAV BAR MOBILE MENU -->
+                <div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <!-- PÁGINA DE INICIO -->
+        <section class="flex items-center justify-center h-screen bg-center bg-cover bg-portada-gradient" id="home">
+            <!-- Contenido de la sección de inicio aquí -->
+        </section>
+        <!-- ACERCA DE NOSOTROS -->
+        <section class="flex items-center justify-center h-screen bg-green-700" id="about">
+            <!-- Contenido de la sección Acerca de nosotros aquí -->
+        </section>
+        <!-- PRODUCTOS -->
+        <section class="flex items-center justify-center h-screen bg-yellow-400" id="products">
+            <!-- Contenido de la sección de Productos aquí -->
+        </section>
+        <!-- SERVICIOS -->
+        <section class="flex items-center justify-center h-screen bg-purple-600" id="services">
+            <!-- Contenido de la sección de Servicios aquí -->
+        </section>
+        <!-- PROYECTOS -->
+        <section class="flex items-center justify-center h-screen bg-yellow-700" id="proyects">
+            <!-- Contenido de la sección de Proyectos aquí -->
+        </section>
+        <!-- BLOG -->
+        <section class="flex items-center justify-center h-screen bg-indigo-500" id="blog">
+            <!-- Contenido de la sección de Blog aquí -->
+        </section>
+        <!-- CONTACTENOS -->
+        <section class="flex items-center justify-center h-screen bg-yellow-400" id="contact">
+            <!-- Contenido de la sección de Contacto aquí -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+
+
 </body>
+
 </html>
