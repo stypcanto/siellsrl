@@ -9,9 +9,23 @@ module.exports = {
       },
       colors: {
         customYellow: '#ffedd3',
+        azulnice: '#000428'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.hover:azulnice': {
+          '&:hover': {
+            backgroundColor: '#000428',
+            // Puedes ajustar otros estilos aquí
+          },
+        },
+      }
+
+      addUtilities(newUtilities, ['group', 'responsive', 'hover'])
+    },
+  ],
 }
 
