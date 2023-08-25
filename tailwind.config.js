@@ -9,23 +9,21 @@ module.exports = {
       },
       colors: {
         customYellow: '#ffedd3',
-        azulnice: '#000428'
+        azulnice: '#000428',
+        azulclaro: 'rgb(18, 60, 91)',
+        azulsimple:'#004e92',
       },
+
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        '.hover:azulnice': {
-          '&:hover': {
-            backgroundColor: '#000428',
-            // Puedes ajustar otros estilos aquí
-          },
-        },
-      }
-
-      addUtilities(newUtilities, ['group', 'responsive', 'hover'])
-    },
-  ],
+  variants:{
+    opacity: ['responsive','hover','focus','disabled'],
+    backgroundColor: ['active','hover','focus','group-hover','disabled'],
+    ringWidth:['active','focus'],
+    textColor:['disabled'], 
+     // Agrega 'group' a las variantes
+     group: ['hover'],
+  },
+  plugins: [],
 }
 

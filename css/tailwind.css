@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@responsive {
+    .rotate-45 {
+        transform: rotate(45deg);
+    }
+}
+
+@variants hover {
+    .zoom {
+        transform: scale(2);
+    }
+}
+
+.btn{
+    @apply w-full px-3 py-1 text-lg transition duration-300 sm:w-48 focus:outline-none;
+}
