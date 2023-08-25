@@ -177,284 +177,347 @@
             id="blog">
             <!-- Contenido de la sección de Blog aquí -->
         </section>
+
+
         <!-- CONTACTENOS -->
-        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulsimple to-azulnice"
+        <section class="flex items-center justify-center h-screen animate-fade-in bg-gradient-to-r from-azulsimple to-azulnice"
             id="contact">
-            <!-- Contenido de la sección de Contacto aquí -->
+            <!-- Box general -->
+            <div class="container relative flex items-center justify-center px-5 py-5 bg-transparent h-5/6">
 
-            <form action="envio.php" method="POST" onsubmit="return enviarformulario();"
-                class="w-full max-w-lg px-4 py-4 mx-auto bg-white shadow-2xl rounded-xl">
-                <!-- Asegúrate de especificar el atributo "action" con la URL de destino -->
+                 <!-- Titulo -->
+                <div class="absolute flex font-medium top-20 text-yellow-50">
+                    <h1 class="mt-2 mr-96">Contáctenos</h1>
+                    <h1 class="mt-16">Ubíquenos</h1>
+                  </div>
 
-                <div class="flex flex-wrap mb-6 -mx-3">
-                    <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
-                        <label for="nombre" class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase">
-                            <i class="fas fa-user"></i> Nombre:
-                        </label>
-                        <input type="text" id="nombre" name="nombre" required
-                            class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
+
+                <!-- Box especifico -->
+                <div class="container flex flex-row-reverse justify-between w-full bg-transparent">
+
+                    <!-- mapa -->
+                    <div class="flex-1 w-40 p-3 mt-16 h-72">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0014539863264!2d-79.84416452411965!3d-6.769674993227166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cefd01aaf610d%3A0xb7ce46452046dea8!2sSIELL%20SRL!5e0!3m2!1ses-419!2spe!4v1692944491810!5m2!1ses-419!2spe"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-                    <div class="w-full px-3 md:w-1/2">
-                        <label for="apellidos"
-                            class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase">
-                            <i class="fas fa-user"></i> Apellidos:
-                        </label>
-                        <input type="text" id="apellidos" name="apellidos" required
-                            class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
+                    <!-- Figurita -->
+                    <div class="absolute flex-1 p-4 mr-16 right-96 top-80 ">
+                        <img src="./img/SIELL2.png" alt="Figurita Siell" class=" w-60 h-60">
+                    </div>
+                    <!-- Formulario -->
+                    <div class="flex-1 p-4 ">
+                        <form action="envio.php" method="POST" onsubmit="return enviarformulario();"
+                            class="w-full max-w-xl py-1 mx-auto bg-white shadow-2xl px-7 rounded-xl">
+                            <!-- Asegúrate de especificar el atributo "action" con la URL de destino -->
+
+                            <div class="flex flex-wrap mt-3 mb-2 -mx-3">
+                                <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
+                                    <label for="nombre"
+                                        class="block mb-2 text-xs font-bold tracking-wide text-gray-700 ">
+                                        <i class="fas fa-user"></i> Nombre:
+                                    </label>
+                                    <input type="text" id="nombre" name="nombre" required
+                                        class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
+                                </div>
+                                <div class="w-full px-3 md:w-1/2">
+                                    <label for="apellidos"
+                                        class="block mb-2 text-xs font-bold tracking-wide text-gray-700 ">
+                                        <i class="fas fa-user"></i> Apellidos:
+                                    </label>
+                                    <input type="text" id="apellidos" name="apellidos" required
+                                        class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap mb-2 -mx-3">
+                                <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
+                                    <label for="codigo_pais"
+                                        class="block mb-2 text-xs font-bold tracking-wide text-gray-700 "><i
+                                            class="fas fa-globe"></i> Código país:</label>
+                                    <select id="codigo_pais" name="codigo_pais"
+                                        class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
+                                        <!-- Opciones del código de país -->
+                                        <option value="93">+93 (Afganistán) 🇦🇫</option>
+                                        <option value="355">+355 (Albania) 🇦🇱</option>
+                                        <option value="49">+49 (Alemania) 🇩🇪</option>
+                                        <option value="376">+376 (Andorra) 🇦🇩</option>
+                                        <option value="244">+244 (Angola) 🇦🇴</option>
+                                        <option value="1">+1 (Antigua y Barbuda) 🇦🇬</option>
+                                        <option value="966">+966 (Arabia Saudita) 🇸🇦</option>
+                                        <option value="213">+213 (Argelia) 🇩🇿</option>
+                                        <option value="54">+54 (Argentina) 🇦🇷</option>
+                                        <option value="374">+374 (Armenia) 🇦🇲</option>
+                                        <option value="61">+61 (Australia) 🇦🇺</option>
+                                        <option value="43">+43 (Austria) 🇦🇹</option>
+                                        <option value="994">+994 (Azerbaiyán) 🇦🇿</option>
+                                        <option value="1">+1 (Bahamas) 🇧🇸</option>
+                                        <option value="880">+880 (Bangladés) 🇧🇩</option>
+                                        <option value="1">+1 (Barbados) 🇧🇧</option>
+                                        <option value="973">+973 (Baréin) 🇧🇭</option>
+                                        <option value="32">+32 (Bélgica) 🇧🇪</option>
+                                        <option value="501">+501 (Belice) 🇧🇿</option>
+                                        <option value="229">+229 (Benín) 🇧🇯</option>
+                                        <option value="375">+375 (Bielorrusia) 🇧🇾</option>
+                                        <option value="95">+95 (Birmania) 🇲🇲</option>
+                                        <option value="591">+591 (Bolivia) 🇧🇴</option>
+                                        <option value="387">+387 (Bosnia y Herzegovina) 🇧🇦</option>
+                                        <option value="267">+267 (Botsuana) 🇧🇼</option>
+                                        <option value="55">+55 (Brasil) 🇧🇷</option>
+                                        <option value="673">+673 (Brunéi) 🇧🇳</option>
+                                        <option value="359">+359 (Bulgaria) 🇧🇬</option>
+                                        <option value="226">+226 (Burkina Faso) 🇧🇫</option>
+                                        <option value="257">+257 (Burundi) 🇧🇮</option>
+                                        <option value="975">+975 (Bután) 🇧🇹</option>
+                                        <option value="238">+238 (Cabo Verde) 🇨🇻</option>
+                                        <option value="855">+855 (Camboya) 🇰🇭</option>
+                                        <option value="237">+237 (Camerún) 🇨🇲</option>
+                                        <option value="1">+1 (Canadá) 🇨🇦</option>
+                                        <option value="974">+974 (Catar) 🇶🇦</option>
+                                        <option value="235">+235 (Chad) 🇹🇩</option>
+                                        <option value="56">+56 (Chile) 🇨🇱</option>
+                                        <option value="86">+86 (China) 🇨🇳</option>
+                                        <option value="357">+357 (Chipre) 🇨🇾</option>
+                                        <option value="379">+379 (Ciudad del Vaticano) 🇻🇦</option>
+                                        <option value="57">+57 (Colombia) 🇨🇴</option>
+                                        <option value="269">+269 (Comoras) 🇰🇲</option>
+                                        <option value="850">+850 (Corea del Norte) 🇰🇵</option>
+                                        <option value="82">+82 (Corea del Sur) 🇰🇷</option>
+                                        <option value="225">+225 (Costa de Marfil) 🇨🇮</option>
+                                        <option value="506">+506 (Costa Rica) 🇨🇷</option>
+                                        <option value="385">+385 (Croacia) 🇭🇷</option>
+                                        <option value="53">+53 (Cuba) 🇨🇺</option>
+                                        <option value="45">+45 (Dinamarca) 🇩🇰</option>
+                                        <option value="1">+1 (Dominica) 🇩🇲</option>
+                                        <option value="593">+593 (Ecuador) 🇪🇨</option>
+                                        <option value="20">+20 (Egipto) 🇪🇬</option>
+                                        <option value="503">+503 (El Salvador) 🇸🇻</option>
+                                        <option value="971">+971 (Emiratos Árabes Unidos) 🇦🇪</option>
+                                        <option value="291">+291 (Eritrea) 🇪🇷</option>
+                                        <option value="421">+421 (Eslovaquia) 🇸🇰</option>
+                                        <option value="386">+386 (Eslovenia) 🇸🇮</option>
+                                        <option value="34">+34 (España) 🇪🇸</option>
+                                        <option value="1">+1 (Estados Unidos) 🇺🇸</option>
+                                        <option value="372">+372 (Estonia) 🇪🇪</option>
+                                        <option value="251">+251 (Etiopía) 🇪🇹</option>
+                                        <option value="63">+63 (Filipinas) 🇵🇭</option>
+                                        <option value="358">+358 (Finlandia) 🇫🇮</option>
+                                        <option value="679">+679 (Fiyi) 🇫🇯</option>
+                                        <option value="33">+33 (Francia) 🇫🇷</option>
+                                        <option value="241">+241 (Gabón) 🇬🇦</option>
+                                        <option value="220">+220 (Gambia) 🇬🇲</option>
+                                        <option value="995">+995 (Georgia) 🇬🇪</option>
+                                        <option value="233">+233 (Ghana) 🇬🇭</option>
+                                        <option value="1">+1 (Granada) 🇬🇩</option>
+                                        <option value="30">+30 (Grecia) 🇬🇷</option>
+                                        <option value="502">+502 (Guatemala) 🇬🇹</option>
+                                        <option value="592">+592 (Guyana) 🇬🇾</option>
+                                        <option value="224">+224 (Guinea) 🇬🇳</option>
+                                        <option value="240">+240 (Guinea ecuatorial) 🇬🇶</option>
+                                        <option value="245">+245 (Guinea-Bisáu) 🇬🇼</option>
+                                        <option value="509">+509 (Haití) 🇭🇹</option>
+                                        <option value="504">+504 (Honduras) 🇭🇳</option>
+                                        <option value="36">+36 (Hungría) 🇭🇺</option>
+                                        <option value="91">+91 (India) 🇮🇳</option>
+                                        <option value="62">+62 (Indonesia) 🇮🇩</option>
+                                        <option value="964">+964 (Irak) 🇮🇶</option>
+                                        <option value="98">+98 (Irán) 🇮🇷</option>
+                                        <option value="353">+353 (Irlanda) 🇮🇪</option>
+                                        <option value="354">+354 (Islandia) 🇮🇸</option>
+                                        <option value="692">+692 (Islas Marshall) 🇲🇭</option>
+                                        <option value="677">+677 (Islas Salomón) 🇸🇧</option>
+                                        <option value="972">+972 (Israel) 🇮🇱</option>
+                                        <option value="39">+39 (Italia) 🇮🇹</option>
+                                        <option value="1">+1 (Jamaica) 🇯🇲</option>
+                                        <option value="81">+81 (Japón) 🇯🇵</option>
+                                        <option value="962">+962 (Jordania) 🇯🇴</option>
+                                        <option value="7">+7 (Kazajistán) 🇰🇿</option>
+                                        <option value="254">+254 (Kenia) 🇰🇪</option>
+                                        <option value="996">+996 (Kirguistán) 🇰🇬</option>
+                                        <option value="686">+686 (Kiribati) 🇰🇮</option>
+                                        <option value="965">+965 (Kuwait) 🇰🇼</option>
+                                        <option value="856">+856 (Laos) 🇱🇦</option>
+                                        <option value="266">+266 (Lesoto) 🇱🇸</option>
+                                        <option value="371">+371 (Letonia) 🇱🇻</option>
+                                        <option value="961">+961 (Líbano) 🇱🇧</option>
+                                        <option value="231">+231 (Liberia) 🇱🇷</option>
+                                        <option value="218">+218 (Libia) 🇱🇾</option>
+                                        <option value="423">+423 (Liechtenstein) 🇱🇮</option>
+                                        <option value="370">+370 (Lituania) 🇱🇹</option>
+                                        <option value="352">+352 (Luxemburgo) 🇱🇺</option>
+                                        <option value="389">+389 (Macedonia del Norte) 🇲🇰</option>
+                                        <option value="261">+261 (Madagascar) 🇲🇬</option>
+                                        <option value="60">+60 (Malasia) 🇲🇾</option>
+                                        <option value="265">+265 (Malaui) 🇲🇼</option>
+                                        <option value="960">+960 (Maldivas) 🇲🇻</option>
+                                        <option value="223">+223 (Malí) 🇲🇱</option>
+                                        <option value="356">+356 (Malta) 🇲🇹</option>
+                                        <option value="212">+212 (Marruecos) 🇲🇦</option>
+                                        <option value="230">+230 (Mauricio) 🇲🇺</option>
+                                        <option value="222">+222 (Mauritania) 🇲🇷</option>
+                                        <option value="52">+52 (México) 🇲🇽</option>
+                                        <option value="691">+691 (Micronesia) 🇫🇲</option>
+                                        <option value="373">+373 (Moldavia) 🇲🇩</option>
+                                        <option value="377">+377 (Mónaco) 🇲🇨</option>
+                                        <option value="976">+976 (Mongolia) 🇲🇳</option>
+                                        <option value="382">+382 (Montenegro) 🇲🇪</option>
+                                        <option value="258">+258 (Mozambique) 🇲🇿</option>
+                                        <option value="264">+264 (Namibia) 🇳🇦</option>
+                                        <option value="674">+674 (Nauru) 🇳🇷</option>
+                                        <option value="977">+977 (Nepal) 🇳🇵</option>
+                                        <option value="505">+505 (Nicaragua) 🇳🇮</option>
+                                        <option value="227">+227 (Níger) 🇳🇪</option>
+                                        <option value="234">+234 (Nigeria) 🇳🇬</option>
+                                        <option value="47">+47 (Noruega) 🇳🇴</option>
+                                        <option value="64">+64 (Nueva Zelanda) 🇳🇿</option>
+                                        <option value="968">+968 (Omán) 🇴🇲</option>
+                                        <option value="31">+31 (Países Bajos) 🇳🇱</option>
+                                        <option value="92">+92 (Pakistán) 🇵🇰</option>
+                                        <option value="680">+680 (Palaos) 🇵🇼</option>
+                                        <option value="507">+507 (Panamá) 🇵🇦</option>
+                                        <option value="675">+675 (Papúa Nueva Guinea) 🇵🇬</option>
+                                        <option value="595">+595 (Paraguay) 🇵🇾</option>
+                                        <option value="51" selected>+51 (Perú) 🇵🇪</option>
+                                        <option value="48">+48 (Polonia) 🇵🇱</option>
+                                        <option value="351">+351 (Portugal) 🇵🇹</option>
+                                        <option value="44">+44 (Reino Unido) 🇬🇧</option>
+                                        <option value="236">+236 (República Centroafricana) 🇨🇫</option>
+                                        <option value="420">+420 (República Checa) 🇨🇿</option>
+                                        <option value="242">+242 (República del Congo) 🇨🇬</option>
+                                        <option value="243">+243 (República Democrática del Congo) 🇨🇩</option>
+                                        <option value="1">+1 (República Dominicana) 🇩🇴</option>
+                                        <option value="250">+250 (Ruanda) 🇷🇼</option>
+                                        <option value="40">+40 (Rumanía) 🇷🇴</option>
+                                        <option value="7">+7 (Rusia) 🇷🇺</option>
+                                        <option value="685">+685 (Samoa) 🇼🇸</option>
+                                        <option value="1">+1 (San Cristóbal y Nieves) 🇰🇳</option>
+                                        <option value="378">+378 (San Marino) 🇸🇲</option>
+                                        <option value="1">+1 (San Vicente y las Granadinas) 🇻🇨</option>
+                                        <option value="1">+1 (Santa Lucía) 🇱🇨</option>
+                                        <option value="239">+239 (Santo Tomé y Príncipe) 🇸🇹</option>
+                                        <option value="221">+221 (Senegal) 🇸🇳</option>
+                                        <option value="381">+381 (Serbia) 🇷🇸</option>
+                                        <option value="248">+248 (Seychelles) 🇸🇨</option>
+                                        <option value="232">+232 (Sierra Leona) 🇸🇱</option>
+                                        <option value="65">+65 (Singapur) 🇸🇬</option>
+                                        <option value="963">+963 (Siria) 🇸🇾</option>
+                                        <option value="252">+252 (Somalia) 🇸🇴</option>
+                                        <option value="94">+94 (Sri Lanka) 🇱🇰</option>
+                                        <option value="268">+268 (Suazilandia) 🇸🇿</option>
+                                        <option value="27">+27 (Sudáfrica) 🇿🇦</option>
+                                        <option value="249">+249 (Sudán) 🇸🇩</option>
+                                        <option value="211">+211 (Sudán del Sur) 🇸🇸</option>
+                                        <option value="46">+46 (Suecia) 🇸🇪</option>
+                                        <option value="41">+41 (Suiza) 🇨🇭</option>
+                                        <option value="597">+597 (Surinam) 🇸🇷</option>
+                                        <option value="66">+66 (Tailandia) 🇹🇭</option>
+                                        <option value="255">+255 (Tanzania) 🇹🇿</option>
+                                        <option value="992">+992 (Tayikistán) 🇹🇯</option>
+                                        <option value="670">+670 (Timor Oriental) 🇹🇱</option>
+                                        <option value="228">+228 (Togo) 🇹🇬</option>
+                                        <option value="676">+676 (Tonga) 🇹🇴</option>
+                                        <option value="1">+1 (Trinidad y Tobago) 🇹🇹</option>
+                                        <option value="216">+216 (Túnez) 🇹🇳</option>
+                                        <option value="993">+993 (Turkmenistán) 🇹🇲</option>
+                                        <option value="90">+90 (Turquía) 🇹🇷</option>
+                                        <option value="688">+688 (Tuvalu) 🇹🇻</option>
+                                        <option value="380">+380 (Ucrania) 🇺🇦</option>
+                                        <option value="256">+256 (Uganda) 🇺🇬</option>
+                                        <option value="598">+598 (Uruguay) 🇺🇾</option>
+                                        <option value="998">+998 (Uzbekistán) 🇺🇿</option>
+                                        <option value="678">+678 (Vanuatu) 🇻🇺</option>
+                                        <option value="58">+58 (Venezuela) 🇻🇪</option>
+                                        <option value="84">+84 (Vietnam) 🇻🇳</option>
+                                        <option value="967">+967 (Yemen) 🇾🇪</option>
+                                        <option value="253">+253 (Yibuti) 🇩🇯</option>
+                                        <option value="260">+260 (Zambia) 🇿🇲</option>
+                                        <option value="263">+263 (Zimbabue) 🇿🇼</option>
+
+
+                                    </select>
+                                </div>
+
+
+                                <div class="w-full px-3 md:w-1/2">
+
+                                    <label for="telefono"
+                                        class="block mb-2 text-xs font-bold tracking-wide text-gray-700 ">
+                                        <i class="fas fa-phone"></i> Teléfono:</label>
+                                    <input type="tel" id="telefono" name="telefono" required
+                                        class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap mb-2 -mx-3">
+                                <div class="w-full px-3">
+                                    <label for="correo"
+                                        class="block mb-2 text-xs font-bold tracking-wide text-gray-700 ">
+                                        <i class="fas fa-envelope"></i> Correo Electrónico:</label>
+                                    <input type="email" id="correo" name="correo" required
+                                        class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap mb-2 -mx-3">
+                                <div class="w-full px-3">
+                                    <label for="mensaje"
+                                        class="block mb-2 text-xs font-bold tracking-wide text-gray-700 ">
+                                        <i class="fas fa-comment"></i> Mensaje:</label>
+                                    <textarea id="mensaje" name="mensaje" rows="4" required
+                                        class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between mt-3 mb-2 -mx-3">
+                                <div class="w-full px-3 md:w-1/2">
+                                    <button type="reset"
+                                        class="w-full px-4 py-2 font-bold text-gray-800 bg-gray-300 rounded-full hover:bg-gray-400 focus:outline-none focus:shadow-outline">
+                                        <i class="fas fa-sync"></i> Reiniciar
+                                    </button>
+                                </div>
+                                <div class="w-full px-3 md:w-1/2">
+                                    <button type="submit"
+                                        class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline">
+                                        <i class="fas fa-paper-plane"></i> Enviar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Informacion empresa-->
+                <div class="absolute grid grid-cols-1 gap-6 bg-transparent mt-28 top-3/4 md:grid-cols-3">
+                    <!-- Columna 1: Ubicación -->
+                    <div class="flex flex-col items-center text-white">
+                        <i class="mb-2 text-2xl fas fa-map-marker-alt"></i>
+                        <p class="text-center">Calle Lora y Cordero 580, Chiclayo. Perú</p>
+                    </div>
+
+                    <!-- Columna 2: Teléfono -->
+                    <div class="flex flex-col items-center text-white">
+                        <i class="mb-2 text-2xl fas fa-phone"></i>
+                        <p class="text-center">(+51) 999 553 7334</p>
+                    </div>
+
+                    <!-- Columna 3: Email -->
+                    <div class="flex flex-col items-center text-white">
+                        <i class="mb-2 text-2xl fas fa-envelope"></i>
+                        <p class="text-center">contacto@siellsrl.com</p>
+                        <p class="text-center">siell.services@gmail.com</p>
                     </div>
                 </div>
 
-                <div class="flex flex-wrap mb-6 -mx-3">
-                    <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
-                        <label for="codigo_pais"
-                            class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"><i
-                                class="fas fa-globe"></i> Código país:</label>
-                        <select id="codigo_pais" name="codigo_pais"
-                            class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
-                            <!-- Opciones del código de país -->
-                            <option value="93">+93 (Afganistán) 🇦🇫</option>
-                            <option value="355">+355 (Albania) 🇦🇱</option>
-                            <option value="49">+49 (Alemania) 🇩🇪</option>
-                            <option value="376">+376 (Andorra) 🇦🇩</option>
-                            <option value="244">+244 (Angola) 🇦🇴</option>
-                            <option value="1">+1 (Antigua y Barbuda) 🇦🇬</option>
-                            <option value="966">+966 (Arabia Saudita) 🇸🇦</option>
-                            <option value="213">+213 (Argelia) 🇩🇿</option>
-                            <option value="54">+54 (Argentina) 🇦🇷</option>
-                            <option value="374">+374 (Armenia) 🇦🇲</option>
-                            <option value="61">+61 (Australia) 🇦🇺</option>
-                            <option value="43">+43 (Austria) 🇦🇹</option>
-                            <option value="994">+994 (Azerbaiyán) 🇦🇿</option>
-                            <option value="1">+1 (Bahamas) 🇧🇸</option>
-                            <option value="880">+880 (Bangladés) 🇧🇩</option>
-                            <option value="1">+1 (Barbados) 🇧🇧</option>
-                            <option value="973">+973 (Baréin) 🇧🇭</option>
-                            <option value="32">+32 (Bélgica) 🇧🇪</option>
-                            <option value="501">+501 (Belice) 🇧🇿</option>
-                            <option value="229">+229 (Benín) 🇧🇯</option>
-                            <option value="375">+375 (Bielorrusia) 🇧🇾</option>
-                            <option value="95">+95 (Birmania) 🇲🇲</option>
-                            <option value="591">+591 (Bolivia) 🇧🇴</option>
-                            <option value="387">+387 (Bosnia y Herzegovina) 🇧🇦</option>
-                            <option value="267">+267 (Botsuana) 🇧🇼</option>
-                            <option value="55">+55 (Brasil) 🇧🇷</option>
-                            <option value="673">+673 (Brunéi) 🇧🇳</option>
-                            <option value="359">+359 (Bulgaria) 🇧🇬</option>
-                            <option value="226">+226 (Burkina Faso) 🇧🇫</option>
-                            <option value="257">+257 (Burundi) 🇧🇮</option>
-                            <option value="975">+975 (Bután) 🇧🇹</option>
-                            <option value="238">+238 (Cabo Verde) 🇨🇻</option>
-                            <option value="855">+855 (Camboya) 🇰🇭</option>
-                            <option value="237">+237 (Camerún) 🇨🇲</option>
-                            <option value="1">+1 (Canadá) 🇨🇦</option>
-                            <option value="974">+974 (Catar) 🇶🇦</option>
-                            <option value="235">+235 (Chad) 🇹🇩</option>
-                            <option value="56">+56 (Chile) 🇨🇱</option>
-                            <option value="86">+86 (China) 🇨🇳</option>
-                            <option value="357">+357 (Chipre) 🇨🇾</option>
-                            <option value="379">+379 (Ciudad del Vaticano) 🇻🇦</option>
-                            <option value="57">+57 (Colombia) 🇨🇴</option>
-                            <option value="269">+269 (Comoras) 🇰🇲</option>
-                            <option value="850">+850 (Corea del Norte) 🇰🇵</option>
-                            <option value="82">+82 (Corea del Sur) 🇰🇷</option>
-                            <option value="225">+225 (Costa de Marfil) 🇨🇮</option>
-                            <option value="506">+506 (Costa Rica) 🇨🇷</option>
-                            <option value="385">+385 (Croacia) 🇭🇷</option>
-                            <option value="53">+53 (Cuba) 🇨🇺</option>
-                            <option value="45">+45 (Dinamarca) 🇩🇰</option>
-                            <option value="1">+1 (Dominica) 🇩🇲</option>
-                            <option value="593">+593 (Ecuador) 🇪🇨</option>
-                            <option value="20">+20 (Egipto) 🇪🇬</option>
-                            <option value="503">+503 (El Salvador) 🇸🇻</option>
-                            <option value="971">+971 (Emiratos Árabes Unidos) 🇦🇪</option>
-                            <option value="291">+291 (Eritrea) 🇪🇷</option>
-                            <option value="421">+421 (Eslovaquia) 🇸🇰</option>
-                            <option value="386">+386 (Eslovenia) 🇸🇮</option>
-                            <option value="34">+34 (España) 🇪🇸</option>
-                            <option value="1">+1 (Estados Unidos) 🇺🇸</option>
-                            <option value="372">+372 (Estonia) 🇪🇪</option>
-                            <option value="251">+251 (Etiopía) 🇪🇹</option>
-                            <option value="63">+63 (Filipinas) 🇵🇭</option>
-                            <option value="358">+358 (Finlandia) 🇫🇮</option>
-                            <option value="679">+679 (Fiyi) 🇫🇯</option>
-                            <option value="33">+33 (Francia) 🇫🇷</option>
-                            <option value="241">+241 (Gabón) 🇬🇦</option>
-                            <option value="220">+220 (Gambia) 🇬🇲</option>
-                            <option value="995">+995 (Georgia) 🇬🇪</option>
-                            <option value="233">+233 (Ghana) 🇬🇭</option>
-                            <option value="1">+1 (Granada) 🇬🇩</option>
-                            <option value="30">+30 (Grecia) 🇬🇷</option>
-                            <option value="502">+502 (Guatemala) 🇬🇹</option>
-                            <option value="592">+592 (Guyana) 🇬🇾</option>
-                            <option value="224">+224 (Guinea) 🇬🇳</option>
-                            <option value="240">+240 (Guinea ecuatorial) 🇬🇶</option>
-                            <option value="245">+245 (Guinea-Bisáu) 🇬🇼</option>
-                            <option value="509">+509 (Haití) 🇭🇹</option>
-                            <option value="504">+504 (Honduras) 🇭🇳</option>
-                            <option value="36">+36 (Hungría) 🇭🇺</option>
-                            <option value="91">+91 (India) 🇮🇳</option>
-                            <option value="62">+62 (Indonesia) 🇮🇩</option>
-                            <option value="964">+964 (Irak) 🇮🇶</option>
-                            <option value="98">+98 (Irán) 🇮🇷</option>
-                            <option value="353">+353 (Irlanda) 🇮🇪</option>
-                            <option value="354">+354 (Islandia) 🇮🇸</option>
-                            <option value="692">+692 (Islas Marshall) 🇲🇭</option>
-                            <option value="677">+677 (Islas Salomón) 🇸🇧</option>
-                            <option value="972">+972 (Israel) 🇮🇱</option>
-                            <option value="39">+39 (Italia) 🇮🇹</option>
-                            <option value="1">+1 (Jamaica) 🇯🇲</option>
-                            <option value="81">+81 (Japón) 🇯🇵</option>
-                            <option value="962">+962 (Jordania) 🇯🇴</option>
-                            <option value="7">+7 (Kazajistán) 🇰🇿</option>
-                            <option value="254">+254 (Kenia) 🇰🇪</option>
-                            <option value="996">+996 (Kirguistán) 🇰🇬</option>
-                            <option value="686">+686 (Kiribati) 🇰🇮</option>
-                            <option value="965">+965 (Kuwait) 🇰🇼</option>
-                            <option value="856">+856 (Laos) 🇱🇦</option>
-                            <option value="266">+266 (Lesoto) 🇱🇸</option>
-                            <option value="371">+371 (Letonia) 🇱🇻</option>
-                            <option value="961">+961 (Líbano) 🇱🇧</option>
-                            <option value="231">+231 (Liberia) 🇱🇷</option>
-                            <option value="218">+218 (Libia) 🇱🇾</option>
-                            <option value="423">+423 (Liechtenstein) 🇱🇮</option>
-                            <option value="370">+370 (Lituania) 🇱🇹</option>
-                            <option value="352">+352 (Luxemburgo) 🇱🇺</option>
-                            <option value="389">+389 (Macedonia del Norte) 🇲🇰</option>
-                            <option value="261">+261 (Madagascar) 🇲🇬</option>
-                            <option value="60">+60 (Malasia) 🇲🇾</option>
-                            <option value="265">+265 (Malaui) 🇲🇼</option>
-                            <option value="960">+960 (Maldivas) 🇲🇻</option>
-                            <option value="223">+223 (Malí) 🇲🇱</option>
-                            <option value="356">+356 (Malta) 🇲🇹</option>
-                            <option value="212">+212 (Marruecos) 🇲🇦</option>
-                            <option value="230">+230 (Mauricio) 🇲🇺</option>
-                            <option value="222">+222 (Mauritania) 🇲🇷</option>
-                            <option value="52">+52 (México) 🇲🇽</option>
-                            <option value="691">+691 (Micronesia) 🇫🇲</option>
-                            <option value="373">+373 (Moldavia) 🇲🇩</option>
-                            <option value="377">+377 (Mónaco) 🇲🇨</option>
-                            <option value="976">+976 (Mongolia) 🇲🇳</option>
-                            <option value="382">+382 (Montenegro) 🇲🇪</option>
-                            <option value="258">+258 (Mozambique) 🇲🇿</option>
-                            <option value="264">+264 (Namibia) 🇳🇦</option>
-                            <option value="674">+674 (Nauru) 🇳🇷</option>
-                            <option value="977">+977 (Nepal) 🇳🇵</option>
-                            <option value="505">+505 (Nicaragua) 🇳🇮</option>
-                            <option value="227">+227 (Níger) 🇳🇪</option>
-                            <option value="234">+234 (Nigeria) 🇳🇬</option>
-                            <option value="47">+47 (Noruega) 🇳🇴</option>
-                            <option value="64">+64 (Nueva Zelanda) 🇳🇿</option>
-                            <option value="968">+968 (Omán) 🇴🇲</option>
-                            <option value="31">+31 (Países Bajos) 🇳🇱</option>
-                            <option value="92">+92 (Pakistán) 🇵🇰</option>
-                            <option value="680">+680 (Palaos) 🇵🇼</option>
-                            <option value="507">+507 (Panamá) 🇵🇦</option>
-                            <option value="675">+675 (Papúa Nueva Guinea) 🇵🇬</option>
-                            <option value="595">+595 (Paraguay) 🇵🇾</option>
-                            <option value="51" selected>+51 (Perú) 🇵🇪</option>
-                            <option value="48">+48 (Polonia) 🇵🇱</option>
-                            <option value="351">+351 (Portugal) 🇵🇹</option>
-                            <option value="44">+44 (Reino Unido) 🇬🇧</option>
-                            <option value="236">+236 (República Centroafricana) 🇨🇫</option>
-                            <option value="420">+420 (República Checa) 🇨🇿</option>
-                            <option value="242">+242 (República del Congo) 🇨🇬</option>
-                            <option value="243">+243 (República Democrática del Congo) 🇨🇩</option>
-                            <option value="1">+1 (República Dominicana) 🇩🇴</option>
-                            <option value="250">+250 (Ruanda) 🇷🇼</option>
-                            <option value="40">+40 (Rumanía) 🇷🇴</option>
-                            <option value="7">+7 (Rusia) 🇷🇺</option>
-                            <option value="685">+685 (Samoa) 🇼🇸</option>
-                            <option value="1">+1 (San Cristóbal y Nieves) 🇰🇳</option>
-                            <option value="378">+378 (San Marino) 🇸🇲</option>
-                            <option value="1">+1 (San Vicente y las Granadinas) 🇻🇨</option>
-                            <option value="1">+1 (Santa Lucía) 🇱🇨</option>
-                            <option value="239">+239 (Santo Tomé y Príncipe) 🇸🇹</option>
-                            <option value="221">+221 (Senegal) 🇸🇳</option>
-                            <option value="381">+381 (Serbia) 🇷🇸</option>
-                            <option value="248">+248 (Seychelles) 🇸🇨</option>
-                            <option value="232">+232 (Sierra Leona) 🇸🇱</option>
-                            <option value="65">+65 (Singapur) 🇸🇬</option>
-                            <option value="963">+963 (Siria) 🇸🇾</option>
-                            <option value="252">+252 (Somalia) 🇸🇴</option>
-                            <option value="94">+94 (Sri Lanka) 🇱🇰</option>
-                            <option value="268">+268 (Suazilandia) 🇸🇿</option>
-                            <option value="27">+27 (Sudáfrica) 🇿🇦</option>
-                            <option value="249">+249 (Sudán) 🇸🇩</option>
-                            <option value="211">+211 (Sudán del Sur) 🇸🇸</option>
-                            <option value="46">+46 (Suecia) 🇸🇪</option>
-                            <option value="41">+41 (Suiza) 🇨🇭</option>
-                            <option value="597">+597 (Surinam) 🇸🇷</option>
-                            <option value="66">+66 (Tailandia) 🇹🇭</option>
-                            <option value="255">+255 (Tanzania) 🇹🇿</option>
-                            <option value="992">+992 (Tayikistán) 🇹🇯</option>
-                            <option value="670">+670 (Timor Oriental) 🇹🇱</option>
-                            <option value="228">+228 (Togo) 🇹🇬</option>
-                            <option value="676">+676 (Tonga) 🇹🇴</option>
-                            <option value="1">+1 (Trinidad y Tobago) 🇹🇹</option>
-                            <option value="216">+216 (Túnez) 🇹🇳</option>
-                            <option value="993">+993 (Turkmenistán) 🇹🇲</option>
-                            <option value="90">+90 (Turquía) 🇹🇷</option>
-                            <option value="688">+688 (Tuvalu) 🇹🇻</option>
-                            <option value="380">+380 (Ucrania) 🇺🇦</option>
-                            <option value="256">+256 (Uganda) 🇺🇬</option>
-                            <option value="598">+598 (Uruguay) 🇺🇾</option>
-                            <option value="998">+998 (Uzbekistán) 🇺🇿</option>
-                            <option value="678">+678 (Vanuatu) 🇻🇺</option>
-                            <option value="58">+58 (Venezuela) 🇻🇪</option>
-                            <option value="84">+84 (Vietnam) 🇻🇳</option>
-                            <option value="967">+967 (Yemen) 🇾🇪</option>
-                            <option value="253">+253 (Yibuti) 🇩🇯</option>
-                            <option value="260">+260 (Zambia) 🇿🇲</option>
-                            <option value="263">+263 (Zimbabue) 🇿🇼</option>
 
+                <!-- Mensaje Box -->
+                <div>
 
-                        </select>
-                    </div>
-
-
-                    <div class="w-full px-3 md:w-1/2">
-
-                        <label for="telefono"
-                            class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase">
-                            <i class="fas fa-phone"></i> Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" required
-                            class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
-                    </div>
                 </div>
 
-                <div class="flex flex-wrap mb-6 -mx-3">
-                    <div class="w-full px-3">
-                        <label for="correo" class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase">
-                            <i class="fas fa-envelope"></i> Correo Electrónico:</label>
-                        <input type="email" id="correo" name="correo" required
-                            class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200">
-                    </div>
-                </div>
 
-                <div class="flex flex-wrap mb-6 -mx-3">
-                    <div class="w-full px-3">
-                        <label for="mensaje" class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase">
-                            <i class="fas fa-comment"></i> Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required
-                            class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 rounded appearance-none focus:outline-none focus:bg-gray-200"></textarea>
-                    </div>
-                </div>
 
-                <div class="flex justify-between mb-6 -mx-3">
-                    <div class="w-full px-3 md:w-1/2">
-                        <button type="reset"
-                            class="w-full px-4 py-2 font-bold text-gray-800 bg-gray-300 rounded-full hover:bg-gray-400 focus:outline-none focus:shadow-outline">
-                            <i class="fas fa-sync"></i> Reiniciar
-                        </button>
-                    </div>
-                    <div class="w-full px-3 md:w-1/2">
-                        <button type="submit"
-                            class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline">
-                            <i class="fas fa-paper-plane"></i> Enviar
-                        </button>
-                    </div>
-                </div>
-            </form>
+
 
 
         </section>
@@ -462,7 +525,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <footer class="py-8 text-white bg-gray-900">
+        <footer class="py-8 text-white bg-gray-900 fixed-bottom ">
             <div class="container mx-auto">
                 <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
                     <div class="footer-col">
@@ -475,7 +538,7 @@
                             <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
                         </ul>
                     </div>
-        
+
                     <div class="footer-col">
                         <h4 class="text-xl font-semibold">Síguenos</h4>
                         <div class="mt-4">
@@ -497,11 +560,12 @@
                             </a>
                         </div>
                     </div>
-        
+
                     <div class="footer-col">
                         <h4 class="text-xl font-semibold">Contáctenos</h4>
                         <ul class="mt-4">
-                            <li><i class="text-gray-400 fas fa-map-marker-alt"></i> Calle Lora y Cordero 580, Chiclayo. Perú</li>
+                            <li><i class="text-gray-400 fas fa-map-marker-alt"></i> Calle Lora y Cordero 580, Chiclayo.
+                                Perú</li>
                             <li><i class="text-gray-400 fas fa-phone"></i> (+51) 999 553 7334</li>
                             <li><i class="text-gray-400 fas fa-envelope"></i> contacto@siellsrl.com</li>
                         </ul>
@@ -509,7 +573,7 @@
                 </div>
             </div>
         </footer>
-        
+
     </footer>
     <script src="./js/main.js"></script>
 
