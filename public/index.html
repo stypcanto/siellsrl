@@ -20,12 +20,51 @@
     <div>
         <div>
             <nav>
+                <!-- NAV BAR SUPERIOR -->
+                <div  class="fixed flex items-baseline justify-between w-full px-20 py-2 text-xs bg-gradient-to-r from-azulnice to-azulsimple text-customYellow">
+                    <ul class="flex mt-2 font-sans">
+
+                        <i class="mt-0.5 mr-2 fas fa-map-marker-alt"></i>
+                        <li> Calle Lora y Cordero 580, Chiclayo</li>
+
+                        <i class="mt-0.5 ml-8 mr-2 fas fa-mobile-alt"></i>
+                        <li> (+51)999 553 7334</li>
+
+                        <i class="mt-0.5 ml-8 mr-2 fas fa-envelope"></i>
+                        <li> contacto@siellsrl.com</li>
+
+                        <!-- SWITCH -->
+
+                        <li class="relative ml-12 ">
+                            <input type="checkbox" id="switch" class="hidden">
+                            <label for="switch"
+                                class="relative flex items-center w-10 h-5 bg-blue-500 rounded-full cursor-pointer">
+                                <div
+                                    class="absolute w-5 h-5 transition-transform duration-300 ease-in-out transform translate-x-0 bg-white rounded-full">
+                                </div>
+                            </label>
+                        </li>
+
+                    </ul>
+
+                    <ul class="flex justify-end text-xs text-white ">
+                        <a href="https://mail.hostinger.com/" target="_blank"
+                            class="relative inline-block px-4 py-2 leading-normal transition duration-300 rounded-md text-customYellow group hover:bg-azulnice hover:px-8 hover:py-2 hover:text-white hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 focus:bg-azulnice active:bg-azulnice">
+                            Login
+                            <span
+                                class="absolute inset-x-0 bottom-0 h-0.5 bg-white transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
+                        </a>
+                        </li>
+                    </ul>
+
+                </div>
+
                 <!-- NAV BAR CENTER -->
-                <div class="fixed flex items-center justify-between w-full shadow-lg">
+                <div class="fixed flex items-center w-full py-1 mt-8 bg-opacity-50 shadow-xl justify-evenly backdrop-blur-md">
                     <!-- OPCION LOGO -->
-                    <div class="relative ml-6 md:w-40 md:h-16 lg:w-40 lg:h-16">
+                    <ul class="flex items-center mt-3 ml-2 md:w-40 md:h-16 lg:w-40 lg:h-16">
                         <img src="./img/Logo SIELL.png" alt="logo" class="w-full h-full">
-                    </div>
+                    </ul>
 
                     <!-- OPCIONES DE NAVEGACION -->
 
@@ -89,51 +128,12 @@
                         </li>
 
 
-
-
-
-
-
-
-
-
-                        <!-- SWITCH -->
-
-                        <li class="relative px-1 py-3">
-                            <input type="checkbox" id="switch" class="hidden">
-                            <label for="switch"
-                                class="relative flex items-center w-10 h-5 rounded-full cursor-pointer bg-azulclaro">
-                                <div
-                                    class="absolute w-5 h-5 transition-transform duration-300 ease-in-out transform translate-x-0 bg-white rounded-full">
-                                </div>
-                            </label>
-                        </li>
                     </ul>
 
 
-                    <div class="mr-8 ">
-                        <ul class="flex text-xs text-white">
-                            <a href="https://mail.hostinger.com/" target="_blank"
-                                class="relative inline-block px-4 py-2 leading-normal transition duration-300 rounded-md text-customYellow group hover:bg-azulnice hover:px-8 hover:py-2 hover:text-white hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 focus:bg-azulnice active:bg-azulnice">
-                                Login
-                                <span
-                                    class="absolute inset-x-0 bottom-0 h-0.5 bg-white transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
-                            </a>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                </div>
-                <!-- NAV BAR LEFT -->
-                <div>
-
                 </div>
 
-                <!-- NAV BAR RIGHT -->
-                <div>
 
-                </div>
 
                 <!-- NAV BAR MOBILE MENU -->
                 <div>
@@ -153,43 +153,44 @@
             <!-- Contenido de la sección de inicio aquí -->
         </section>
         <!-- ACERCA DE NOSOTROS -->
-        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulsimple to-azulnice"
+        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulnice to-azulsimple "
             id="about">
             <!-- Contenido de la sección Acerca de nosotros aquí -->
         </section>
         <!-- PRODUCTOS -->
-        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulsimple to-azulnice"
+        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulnice to-azulsimple "
             id="products">
             <!-- Contenido de la sección de Productos aquí -->
         </section>
         <!-- SERVICIOS -->
-        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulsimple to-azulnice"
+        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulnice to-azulsimple "
             id="services">
             <!-- Contenido de la sección de Servicios aquí -->
         </section>
         <!-- PROYECTOS -->
-        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulsimple to-azulnice"
+        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulnice to-azulsimple "
             id="proyects">
             <!-- Contenido de la sección de Proyectos aquí -->
         </section>
         <!-- BLOG -->
-        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulsimple to-azulnice"
+        <section class="flex items-center justify-center h-screen bg-gradient-to-r from-azulnice to-azulsimple "
             id="blog">
             <!-- Contenido de la sección de Blog aquí -->
         </section>
 
 
         <!-- CONTACTENOS -->
-        <section class="flex items-center justify-center h-screen animate-fade-in bg-gradient-to-r from-azulsimple to-azulnice"
+        <section
+            class="flex items-center justify-center h-screen animate-fade-in bg-gradient-to-r from-azulnice to-azulsimple "
             id="contact">
             <!-- Box general -->
             <div class="container relative flex items-center justify-center px-5 py-5 bg-transparent h-5/6">
 
-                 <!-- Titulo -->
+                <!-- Titulo -->
                 <div class="absolute flex font-medium top-20 text-yellow-50">
                     <h1 class="mt-2 mr-96">Contáctenos</h1>
                     <h1 class="mt-16">Ubíquenos</h1>
-                  </div>
+                </div>
 
 
                 <!-- Box especifico -->

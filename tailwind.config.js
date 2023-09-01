@@ -21,6 +21,7 @@ module.exports = {
         azulnice: '#000428',
         azulclaro: 'rgb(18, 60, 91)',
         azulsimple:'#004e92',
+        morado:'#364FDA',
       },
 
 
