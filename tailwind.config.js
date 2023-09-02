@@ -2,7 +2,18 @@
 module.exports = {
   content: [],
   theme: {
+    animatedSettings: {
+      animatedSpeed: 1000,
+      heartBeatSpeed: 500,
+      hingeSpeed: 2000,
+      bounceInSpeed: 750,
+      bounceOutSpeed: 750,
+      animationDelaySpeed: 500,
+      classes: ['bounce', 'heartBeat']
+  },
+
     extend: {
+     
       fontFamily: {
         'dm-sanz': ['"DM-Sanz"', 'sans'],
         'roboto': ['Roboto', 'sans'],
@@ -40,10 +51,12 @@ module.exports = {
      // Agrega 'group' a las variantes
      group: ['hover'],
   },
-  plugins: [],
-  safelist: [
-    'animate-[fade-in_1s_ease-in-out]',
-    'animate-[fade-in-down_1s_ease-in-out]'
+  plugins: [
+    require('tailwindcss-animatecss'),
   ],
+  'safelist': [
+    'animate-fade-in_1s_ease-in-out',
+    'animate-fade-in-down_1s_ease-in-out'
+],
 }
 
