@@ -10101,18 +10101,207 @@ video {
 @keyframes pulse {
   50% {
     opacity: .5;
+    transform: scale(1.05);
+  }
+
+  0%, 100% {
+    transform: scale(1);
   }
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(-25%);
+    transform: translateY(0);
     animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50% {
-    transform: none;
+    transform: translateY(-20px);
     animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateOut {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes heartBeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -10129,11 +10318,79 @@ video {
 }
 
 .animate-pulse {
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: pulse 1s infinite;
 }
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 1s ease-in-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-in-out;
+}
+
+.animate-slideOut {
+  animation: slideOut 1s ease-in-out;
+}
+
+.animate-zoomIn {
+  animation: zoomIn 1s ease-in-out;
+}
+
+.animate-zoomOut {
+  animation: zoomOut 1s ease-in-out;
+}
+
+.animate-rotate {
+  animation: rotate 1s infinite;
+}
+
+.animate-fadeScale {
+  animation: fadeScale 1s ease-in-out;
+}
+
+.animate-flip {
+  animation: flip 1s infinite;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.animate-rotateIn {
+  animation: rotateIn 1s ease-in-out;
+}
+
+.animate-rotateOut {
+  animation: rotateOut 1s ease-in-out;
+}
+
+.animate-heartBeat {
+  animation: heartBeat 1s infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out;
 }
 
 .cursor-auto {
@@ -40851,11 +41108,79 @@ video {
   }
 
   .sm\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 1s infinite;
   }
 
   .sm\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .sm\:animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .sm\:animate-fadeOut {
+    animation: fadeOut 1s ease-in-out;
+  }
+
+  .sm\:animate-slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .sm\:animate-slideOut {
+    animation: slideOut 1s ease-in-out;
+  }
+
+  .sm\:animate-zoomIn {
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  .sm\:animate-zoomOut {
+    animation: zoomOut 1s ease-in-out;
+  }
+
+  .sm\:animate-rotate {
+    animation: rotate 1s infinite;
+  }
+
+  .sm\:animate-fadeScale {
+    animation: fadeScale 1s ease-in-out;
+  }
+
+  .sm\:animate-flip {
+    animation: flip 1s infinite;
+  }
+
+  .sm\:animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .sm\:animate-fadeInDown {
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  .sm\:animate-fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  .sm\:animate-fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+  .sm\:animate-rotateIn {
+    animation: rotateIn 1s ease-in-out;
+  }
+
+  .sm\:animate-rotateOut {
+    animation: rotateOut 1s ease-in-out;
+  }
+
+  .sm\:animate-heartBeat {
+    animation: heartBeat 1s infinite;
+  }
+
+  .sm\:animate-fade-in {
+    animation: fade-in 1s ease-in-out;
   }
 
   .sm\:cursor-auto {
@@ -67499,11 +67824,79 @@ video {
   }
 
   .md\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 1s infinite;
   }
 
   .md\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .md\:animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .md\:animate-fadeOut {
+    animation: fadeOut 1s ease-in-out;
+  }
+
+  .md\:animate-slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .md\:animate-slideOut {
+    animation: slideOut 1s ease-in-out;
+  }
+
+  .md\:animate-zoomIn {
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  .md\:animate-zoomOut {
+    animation: zoomOut 1s ease-in-out;
+  }
+
+  .md\:animate-rotate {
+    animation: rotate 1s infinite;
+  }
+
+  .md\:animate-fadeScale {
+    animation: fadeScale 1s ease-in-out;
+  }
+
+  .md\:animate-flip {
+    animation: flip 1s infinite;
+  }
+
+  .md\:animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .md\:animate-fadeInDown {
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  .md\:animate-fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  .md\:animate-fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+  .md\:animate-rotateIn {
+    animation: rotateIn 1s ease-in-out;
+  }
+
+  .md\:animate-rotateOut {
+    animation: rotateOut 1s ease-in-out;
+  }
+
+  .md\:animate-heartBeat {
+    animation: heartBeat 1s infinite;
+  }
+
+  .md\:animate-fade-in {
+    animation: fade-in 1s ease-in-out;
   }
 
   .md\:cursor-auto {
@@ -94147,11 +94540,79 @@ video {
   }
 
   .lg\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 1s infinite;
   }
 
   .lg\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .lg\:animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .lg\:animate-fadeOut {
+    animation: fadeOut 1s ease-in-out;
+  }
+
+  .lg\:animate-slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .lg\:animate-slideOut {
+    animation: slideOut 1s ease-in-out;
+  }
+
+  .lg\:animate-zoomIn {
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  .lg\:animate-zoomOut {
+    animation: zoomOut 1s ease-in-out;
+  }
+
+  .lg\:animate-rotate {
+    animation: rotate 1s infinite;
+  }
+
+  .lg\:animate-fadeScale {
+    animation: fadeScale 1s ease-in-out;
+  }
+
+  .lg\:animate-flip {
+    animation: flip 1s infinite;
+  }
+
+  .lg\:animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .lg\:animate-fadeInDown {
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  .lg\:animate-fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  .lg\:animate-fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+  .lg\:animate-rotateIn {
+    animation: rotateIn 1s ease-in-out;
+  }
+
+  .lg\:animate-rotateOut {
+    animation: rotateOut 1s ease-in-out;
+  }
+
+  .lg\:animate-heartBeat {
+    animation: heartBeat 1s infinite;
+  }
+
+  .lg\:animate-fade-in {
+    animation: fade-in 1s ease-in-out;
   }
 
   .lg\:cursor-auto {
@@ -120795,11 +121256,79 @@ video {
   }
 
   .xl\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 1s infinite;
   }
 
   .xl\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .xl\:animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .xl\:animate-fadeOut {
+    animation: fadeOut 1s ease-in-out;
+  }
+
+  .xl\:animate-slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .xl\:animate-slideOut {
+    animation: slideOut 1s ease-in-out;
+  }
+
+  .xl\:animate-zoomIn {
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  .xl\:animate-zoomOut {
+    animation: zoomOut 1s ease-in-out;
+  }
+
+  .xl\:animate-rotate {
+    animation: rotate 1s infinite;
+  }
+
+  .xl\:animate-fadeScale {
+    animation: fadeScale 1s ease-in-out;
+  }
+
+  .xl\:animate-flip {
+    animation: flip 1s infinite;
+  }
+
+  .xl\:animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .xl\:animate-fadeInDown {
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  .xl\:animate-fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  .xl\:animate-fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+  .xl\:animate-rotateIn {
+    animation: rotateIn 1s ease-in-out;
+  }
+
+  .xl\:animate-rotateOut {
+    animation: rotateOut 1s ease-in-out;
+  }
+
+  .xl\:animate-heartBeat {
+    animation: heartBeat 1s infinite;
+  }
+
+  .xl\:animate-fade-in {
+    animation: fade-in 1s ease-in-out;
   }
 
   .xl\:cursor-auto {
@@ -147443,11 +147972,79 @@ video {
   }
 
   .\32xl\:animate-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 1s infinite;
   }
 
   .\32xl\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .\32xl\:animate-fadeOut {
+    animation: fadeOut 1s ease-in-out;
+  }
+
+  .\32xl\:animate-slideIn {
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .\32xl\:animate-slideOut {
+    animation: slideOut 1s ease-in-out;
+  }
+
+  .\32xl\:animate-zoomIn {
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  .\32xl\:animate-zoomOut {
+    animation: zoomOut 1s ease-in-out;
+  }
+
+  .\32xl\:animate-rotate {
+    animation: rotate 1s infinite;
+  }
+
+  .\32xl\:animate-fadeScale {
+    animation: fadeScale 1s ease-in-out;
+  }
+
+  .\32xl\:animate-flip {
+    animation: flip 1s infinite;
+  }
+
+  .\32xl\:animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .\32xl\:animate-fadeInDown {
+    animation: fadeInDown 1s ease-in-out;
+  }
+
+  .\32xl\:animate-fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+
+  .\32xl\:animate-fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+  .\32xl\:animate-rotateIn {
+    animation: rotateIn 1s ease-in-out;
+  }
+
+  .\32xl\:animate-rotateOut {
+    animation: rotateOut 1s ease-in-out;
+  }
+
+  .\32xl\:animate-heartBeat {
+    animation: heartBeat 1s infinite;
+  }
+
+  .\32xl\:animate-fade-in {
+    animation: fade-in 1s ease-in-out;
   }
 
   .\32xl\:cursor-auto {
