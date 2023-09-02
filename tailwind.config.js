@@ -3,6 +3,11 @@ module.exports = {
   content: [],
   theme: {
     extend: {
+      fontFamily: {
+        'dm-sanz': ['"DM-Sanz"', 'sans'],
+        'roboto': ['Roboto', 'sans'],
+        'lato': ['Lato', 'sans'],
+      },
       margin: {
         '30rem': '30rem', //120px
         '125rem': '125rem', //500px

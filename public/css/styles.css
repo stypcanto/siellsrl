@@ -23394,6 +23394,18 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-dm-sanz {
+  font-family: "DM-Sanz", sans;
+}
+
+.font-roboto {
+  font-family: Roboto, sans;
+}
+
+.font-lato {
+  font-family: Lato, sans;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -51446,6 +51458,18 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-dm-sanz {
+    font-family: "DM-Sanz", sans;
+  }
+
+  .sm\:font-roboto {
+    font-family: Roboto, sans;
+  }
+
+  .sm\:font-lato {
+    font-family: Lato, sans;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -78080,6 +78104,18 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-dm-sanz {
+    font-family: "DM-Sanz", sans;
+  }
+
+  .md\:font-roboto {
+    font-family: Roboto, sans;
+  }
+
+  .md\:font-lato {
+    font-family: Lato, sans;
   }
 
   .md\:text-xs {
@@ -104718,6 +104754,18 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-dm-sanz {
+    font-family: "DM-Sanz", sans;
+  }
+
+  .lg\:font-roboto {
+    font-family: Roboto, sans;
+  }
+
+  .lg\:font-lato {
+    font-family: Lato, sans;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -131354,6 +131402,18 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-dm-sanz {
+    font-family: "DM-Sanz", sans;
+  }
+
+  .xl\:font-roboto {
+    font-family: Roboto, sans;
+  }
+
+  .xl\:font-lato {
+    font-family: Lato, sans;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -157988,6 +158048,18 @@ video {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-dm-sanz {
+    font-family: "DM-Sanz", sans;
+  }
+
+  .\32xl\:font-roboto {
+    font-family: Roboto, sans;
+  }
+
+  .\32xl\:font-lato {
+    font-family: Lato, sans;
   }
 
   .\32xl\:text-xs {
