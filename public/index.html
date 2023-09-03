@@ -31,15 +31,30 @@
                 <div
                     class="fixed flex items-baseline justify-between w-full px-20 py-2 text-xs bg-gradient-to-r from-azulnice to-azulsimple text-customYellow">
                     <ul class="flex mt-2 font-sans">
+                        <li>
+                            <i class="mt-0.5 mr-2 fas fa-map-marker-alt text-gray-500"></i>
+                            <a href="https://goo.gl/maps/Q3SCpaicHWLzjrKe8" target="_blank" rel="noopener noreferrer"
+                                class="transition-colors duration-300 hover:text-blue-500">
+                                Calle Lora y Cordero 580, Chiclayo
+                            </a>
+                        </li>
 
-                        <i class="mt-0.5 mr-2 fas fa-map-marker-alt"></i>
-                        <li> Calle Lora y Cordero 580, Chiclayo</li>
 
-                        <i class="mt-0.5 ml-8 mr-2 fas fa-mobile-alt"></i>
-                        <li> (+51)999 553 7334</li>
 
-                        <i class="mt-0.5 ml-8 mr-2 fas fa-envelope"></i>
-                        <li> contacto@siellsrl.com</li>
+                        <li>
+                            <i
+                                class="mt-0.5 ml-8 mr-2 fas fa-mobile-alt text-gray-500  hover:text-blue-500 transition-colors duration-300"></i>
+                            <a href="https://api.whatsapp.com/send?phone=51999553733&text=Hola%20SIELL%20SRL%2C%20he%20visitado%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20soluciones%20de%20energ%C3%ADa%20solar." target="_blank" rel="noopener noreferrer"
+                                class="transition-colors duration-300 hover:text-blue-500">(+51)999 553 733</a>
+                        </li>
+
+                        <li>
+                            <i
+                                class="mt-0.5 ml-8 mr-2 fas fa-envelope text-gray-500 hover:text-blue-500 transition-colors duration-300"></i>
+                            <a href="mailto:contacto@siellsrl.com" target="_blank" rel="noopener noreferrer"
+                                class="transition-colors duration-300 hover:text-blue-500">contacto@siellsrl.com</a>
+                        </li>
+
 
                         <!-- SWITCH -->
 
@@ -75,10 +90,15 @@
                         <img src="./img/Logo SIELL.png" alt="logo" class="w-full h-full">
                     </ul>
 
+                    <!-- Hamburger Menu Icon para dispositivos móviles y tabletas -->
+                    <button id="hamburger" class="md:hidden focus:outline-none">
+                        <i class="text-2xl fas fa-bars text-customYellow"></i>
+                    </button>
+
                     <!-- OPCIONES DE NAVEGACION -->
 
 
-                    <ul class="flex items-center ml-4 space-x-4 font-sans text-xs text-customYellow">
+                    <ul id="menu" class="items-center hidden ml-4 space-x-4 font-sans text-xs md:flex text-customYellow">
                         <li>
                             <a href="#home"
                                 class="relative inline-block px-4 py-2 leading-normal transition duration-300 rounded-md text-customYellow group hover:bg-azulnice hover:px-8 hover:py-2 hover:text-white hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 focus:bg-azulnice active:bg-azulnice">
@@ -630,7 +650,7 @@
                         <ul class="mt-4">
                             <li><i class="text-gray-400 fas fa-map-marker-alt"></i> Calle Lora y Cordero 580, Chiclayo.
                                 Perú</li>
-                            <li><i class="text-gray-400 fas fa-phone"></i> (+51) 999 553 7334</li>
+                            <li><i class="text-gray-400 fas fa-phone"></i> (+51) 999 553 733</li>
                             <li><i class="text-gray-400 fas fa-envelope"></i> contacto@siellsrl.com</li>
                         </ul>
                     </div>
